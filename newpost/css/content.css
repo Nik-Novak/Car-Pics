@@ -1,0 +1,174 @@
+﻿
+
+/* ===========================
+--- Form
+============================ */
+
+#content form{
+	display: flex;
+	flex-direction: column;
+	width:80%
+}
+
+#content form fieldset{
+	border-top: 1px dashed darkgray;
+	margin:20px;
+	margin-top: 10px;
+}
+
+#content .fieldset-wrapper{
+		margin-bottom: 20px;	
+}
+
+#content button{
+	width:50%;
+	margin: 0 auto;
+}
+
+/* ===========================
+--- Fieldset Legend
+============================ */
+#content .fieldset-wrapper h5{
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+/* ===========================
+--- Photo Details
+============================ */
+
+#content fieldset input, #content fieldset textarea, #content fieldset select {
+		
+}
+
+#content .label-input-wrapper{ /* flex-parent */
+	display: flex;
+	margin-top: 20px;
+}
+
+#content .label-input-wrapper .label-input{/* flex left column */
+	width:200px;
+	text-align: right;
+	margin-right: 10px;
+	margin-top: 12px;
+}
+
+#content .label-input-wrapper .input-wrapper{/* flex right column */
+	
+}
+
+#content #textarea_description{
+	min-height: 150px;
+}
+
+#content #textarea_tags{
+	height: 40px;
+	padding-top: 10px;
+}
+
+#content .input-wrapper{
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+}
+
+#content .input-wrapper p{
+	font-family: cursive;
+	font-size: 12px;
+	font-weight: lighter;
+}
+
+#content .input-wrapper.input-wrapper_vehicle{
+	flex-direction: row;
+	justify-content: space-between
+}
+
+#content select{
+	margin-top: 10px;
+	width: 47%
+}
+
+@media(max-width: 920px){
+	#content .label-input-wrapper .label-input{/* flex left column */
+		width:100px;
+	}
+	#content form{
+		display: flex;
+		flex-direction: column;
+		width:95%
+	}
+	
+	#content .input-wrapper{
+		width: 80%;
+	}
+}
+
+@media(max-width: 530px){
+	#content .label-input-wrapper{ /* flex-parent */
+		flex-direction: column;
+	}
+	
+	#content .label-input-wrapper .label-input{
+		text-align: left;
+	}
+}
+
+
+
+/* ===========================
+--- Location Details
+============================ */
+
+#map{
+	margin-top: 20px;	
+}
+
+#content .fieldset-wrapper.location p{
+	font-family: cursive;
+	font-size: 12px;
+	font-weight: lighter;
+}
+
+#content .fieldset-wrapper.location .center{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content:center;
+	align-items: center;
+}
+
+/* ===========================
+--- Media
+============================ */
+#content .file-container {
+	display: flex;
+    overflow: hidden;
+    position: relative;
+	width: auto;
+}
+
+#content .file-container input[type=file] {
+    cursor: pointer;
+    font-size: 999px;
+    filter: alpha(opacity=0);
+    min-height: 100%;
+    width:56px;
+    opacity: 0;
+    position: absolute;
+}
+
+#content .input-wrapper_time{
+	flex-direction: row;
+	margin-top: -2px;
+	margin-bottom: -10px;
+}
+
+
+/* TEMP STUFF */
+#content img{
+	width: 100%;
+/*
+	width:600px; 405
+	height:306px;
+*/
+}

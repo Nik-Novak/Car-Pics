@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic|Montserrat:700|Merriweather:400italic');
+/* ===========================
+--- General elements
+============================ */
+html,body{
+	margin:0;
+	padding:0;
+	height:100%;
+}
+
+*{
+    font-family: "Helvetica Neue", Helvetica, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, "ＭＳ Ｐゴシック", arial, sans-serif;
+}
+
+button{
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    padding: 11px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+h2{
+	font-size: 40px;
+
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+	line-height: 1.1;
+	border-radius: 10px;
+}
+
+section{
+	padding: 50px 0;	
+}
+
+.section-heading  .fa-angle-down{
+	margin-top: 15px;	
+}
+
+textarea, input , select{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.nodisp{
+	display: none;	
+}
+
+/* ===========================
+--- Content
+============================ */
+
+#content{
+	padding-top: 65px; /* offset navbar 65 navbar height */
+	padding-bottom: 152px; /* offset footer 152 footer height*/
+	
+}
+
+#content input{
+	height: 40px;	
+}
+
+#content input, #content textarea{
+	border: 1px solid #d5dbdd;
+	border-radius: 5px;
+	font-weight: lighter;
+}
+
+#content input {
+	text-indent: 10px;	
+}
+
+#content textarea{
+	resize: none;
+	padding: 3px;
+}
+
+#container {
+   min-height:100%;
+   position:relative;
+}
+
+#content *{
+	font-family: Montserrat,sans-serif;
+}
+
+#content section{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height:100%;
+}
+
+#content .section-heading{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/* ===========================
+--- Footer
+============================ */
+
+footer{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 152px;
+}
+
+footer .btn-circle{
+	width: 70px;
+    height: 70px;
+    margin-top: 15px;
+    padding: 7px 16px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    font-size: 40px;
+    color: #fff;
+    background: 0 0;	
+	text-transform: uppercase;
+    font-family: Montserrat,sans-serif;
+    font-weight: 400;
+	display: inline-block;
+    margin-bottom: 15px;
+	text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+	white-space: nowrap;
+	line-height: 1.428571429;
+	user-select: none;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+
+footer p{
+	margin: 5px;
+}

@@ -1,0 +1,20 @@
+﻿
+/* ===========================
+--- Header-About
+============================ */
+#content .section-heading{
+	margin-top: 50px;
+}
+
+/* ===========================
+--- Form
+============================ */
+
+#content form{
+	display: flex;
+	flex-direction: column;
+}
+
+#content input, #content textarea{
+	margin: 10px;
+}

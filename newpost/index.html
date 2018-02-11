@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Car Pics</title>
+    <!--   Scripts-->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    
+    <!--    CSS-->
+    <link href="/css/reset.css" rel="stylesheet">
+    <link href="/css/colour.css" rel="stylesheet">
+    <link href="/css/global.css" rel="stylesheet">
+    <link href="/css/navbar.css" rel="stylesheet">
+    <link href="css/content.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+   <div id="container">
+		<nav>
+			<div class="flex-item logo">
+				<a href="/"><img src="/logos/MainLogoCircle.svg" alt="Main Logo"></a>
+			</div>
+			<div class="flex-item button_newpost">
+				<a href="/newpost">
+					<button type="button" action="/test">New Post <i class="fas fa-plus"></i></button>
+				</a>
+				<!-- TODO: remove temporary <a> wrapper on button for part 2 -->
+			</div>
+			<div class="flex-item input_search">
+				<i class="fa fa-search"></i>
+				<input type="search" placeholder="Search">
+			</div>
+			<div class="icons">
+				<div class="flex-item icon_plus">
+					<a href="">
+						<span class="fa-layers fa-fw">
+							<i class="fas fa-circle" data-fa-transform="grow-12"></i>
+							<i class="fas fa-plus"></i>
+						</span>
+					</a>
+				</div>
+				<div class="flex-item icon_search">
+					<a href="">
+						<span class="fa-layers fa-fw">
+							<i class="fas fa-circle" data-fa-transform="grow-12"></i>
+							<i class="fas fa-search"></i>
+						</span>
+					</a>
+				</div>
+				<div class="flex-item icon_home">
+					<a href="/">
+						<span class="fa-layers fa-fw">
+							<i class="fas fa-circle" data-fa-transform="grow-12"></i>
+							<i class="fas fa-home"></i>
+						</span>
+					</a>
+				</div>
+				<div class="flex-item icon_menu">
+					<a href="">
+						<span class="fa-layers fa-fw">
+							<i class="fas fa-circle" data-fa-transform="grow-12"></i>
+							<i class="fas fa-bars"></i>
+						</span>
+					</a>
+				</div>
+				<div class="flex-item icon_settings">
+					<a href="/settings">
+						<span class="fa-layers fa-fw">
+							<i class="fas fa-circle" data-fa-transform="grow-12"></i>
+							<i class="fas fa-cog"></i>
+						</span>
+					</a>
+				</div>
+			</div>
+			<div class="flex-item account">
+				<!--
+				<div class="icon_avatar">
+					<i class="fas fa-user-circle"></i>
+				</div>
+				<div class="name">
+					<h3>Nikolas</h3>
+				</div>
+				-->
+				<a href="">Sign In</a> | <a href="/register">Sign Up</a>
+			</div>
+		</nav>
+		<div id="content">
+			<section id="newpost">
+				<div class="section-heading">
+					<h2>New Post</h2>
+					<i class="fa fa-2x fa-angle-down"></i>
+				</div>
+				<form action="">
+
+
+
+
+					<div class="fieldset-wrapper">
+						<div class="fieldset-legend">
+							<h5>Photo Details</h5>
+						</div>
+							<fieldset>
+								<div class="label-input-wrapper">
+									<label for="input_title" class="label-input">Title: </label>
+									<div class="input-wrapper">
+										<input type="text" name="title" id="input_title" >
+										<p>Title your photograph.</p>
+									</div>
+								</div>
+								<div class="label-input-wrapper">
+									<label for="input_title" class="label-input">Description: </label>
+									<div class="input-wrapper">
+										<textarea type="text" name="description" id="textarea_description" ></textarea>
+										
+										<p>Leave a short description. <span class="textcount" countfor="textarea_description">0/500</span></p>
+										
+									</div>
+								</div>
+								<div class="label-input-wrapper">
+									<label for="input_title" class="label-input">Tags: </label>
+									<div class="input-wrapper">
+										<textarea type="text" name="tags" id="textarea_tags" placeholder="tag1, tag2, ..."></textarea>
+										<p>Add tags for other people to find your photos. <span class="textcount" countfor="textarea_tags">0/8</span></p>
+									</div>
+								</div>
+								<div class="label-input-wrapper">
+									<label for="input_title" class="label-input">Vehicle: </label>
+									<div class="input-wrapper input-wrapper_vehicle">
+										<select name="vehicle_make" id="select_vehicle_make">
+											<option value="placeholder">Select Make</option>
+											<option value="placeholder">Placeholder .. serverside</option>
+											<p>Let others know about your ride.</p>
+										</select>
+										<select name="vehicle_model" id="select_vehicle_model">
+											<option value="placeholder">Select Model</option>
+											<option value="placeholder">Placeholder .. serverside</option>
+											<p>Let others know about your ride.</p>
+										</select>
+									</div>
+								</div>
+							</fieldset>
+					</div>
+
+
+
+
+
+					<div class="fieldset-wrapper location">
+						<div class="fieldset-legend">
+							<h5>Location Details</h5>
+						</div>
+						<fieldset>
+							<img id="map" src="/img/placeholders/googlemapsembed.png" alt="placeholder image for future google maps embed">
+							<div class="center">
+							<p>Select the area on the map where you took the photo.</p>
+							</div>
+							<div class="center">
+								<div class="input-wrapper_time">
+									<label class="label-input">Time:</label>
+									<label><input type="checkbox" name="time" value="day"> Day</label>
+									<label><input type="checkbox" name="time" value="night"> Night</label>
+								</div>
+								<p>Select the best time to take photos here.</p>
+							</div>
+						</fieldset>
+					</div>
+					
+					<div class="fieldset-wrapper">
+						<div class="fieldset-legend">
+							<h5>Media</h5>
+						</div>
+						<fieldset>
+						<div class="input-wrapper">
+							<div class="file-container">
+								<i class="far fa-plus-square fa-4x"></i>
+								<input type="file" />
+							</div>
+							<p>Upload the pictures you took at this spot.</p>
+						</div>
+						</fieldset>
+					</div>
+					
+					<button type="submit">Submit Post</button>
+					
+				</form>
+			</section>
+		</div>
+		
+		<footer>
+			<a href="#content" id="totop" class="btn-circle">
+				<i class="fa fa-angle-double-up animated" data-fa-transform="shrink-4"></i>
+			</a>
+			<p>©Car Pics. All rights reserved.</p>
+			<p>Design and implementation by: Nik Novak</p>
+		</footer>
+	</div>
+</body>
+
+</html>

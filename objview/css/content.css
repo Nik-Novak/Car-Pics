@@ -1,0 +1,163 @@
+﻿
+
+/* ===========================
+--- General
+============================ */
+#content h3{
+	margin-top: 20px;
+	margin-bottom: -10px;
+}
+
+#content h2{
+	text-align: center;
+}
+
+#content .container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 80%;
+}
+
+@media(max-width: 768px){
+	#content .container{
+		width: 95%;	
+	}
+}
+
+/* ===========================
+--- Title
+============================ */
+
+#content #title img{
+	border-radius: 15px;
+	box-shadow: 5px 5px 20px grey;
+}
+
+#content #title .rating-container{
+	font-size: 40px;
+	margin-top: 20px;
+}
+
+#content #title .rating-number {
+	margin-top: 5px;	
+	margin-bottom: 10px;	
+}
+
+@media(max-width: 768px){
+	#content #title img{
+		width: 100%;
+	}
+	#content #title .rating-container{
+		font-size: 23px;
+	}
+	
+	#content #title h2{
+		font-size: 200%
+	}
+}
+/* ===========================
+--- Location
+============================ */
+
+#content #location img{
+		width: 80%;
+	}
+
+@media(max-width: 1030){
+	#content #location img{
+		width: 100%;
+	}
+}
+
+/* ===========================
+--- Reviews
+============================ */
+
+#content .reviews-container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 60%
+}
+
+#content .review-container{
+	display: flex;
+	align-items: center;
+	margin: 20px 0;
+}
+
+#content .review-avatar-container{
+	align-self: flex-start;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 10px;
+}
+
+#content .fa-user-circle{
+	font-size: 40px;
+}
+
+#content .review{
+	background: white;
+	border: 1px solid darkgray;
+	border-radius: 5px;
+	padding: 15px;
+	margin: 0 10px;
+	box-shadow: 5px 5px 20px grey;
+}
+
+#content .review-rating{
+	margin-bottom: 10px;
+	display: flex;
+}
+
+#content .review-text p{
+	font-family: cursive;
+	font-size: 14px;
+	font-weight: lighter;
+}
+
+#content .vote-container{
+	display: flex;
+	align-items: center;
+}
+
+#content .fa-long-arrow-alt-up, #content .fa-long-arrow-alt-down{
+	font-size: 30px;
+	cursor: pointer;
+}
+
+
+@media(max-width: 1030px){
+	#content .review-container{
+		flex-direction: column;
+	}
+	
+	#content .review-avatar-container{
+		align-self: center;
+	}
+	
+	#content .reviews-container{
+		width: 80%
+	}
+	
+	#content .arrow-container{
+		margin-top: 10px; 	
+	}
+	
+}
+
+@media(max-width: 768px){
+	
+	#content .reviews-container{
+		width: 100%
+	}
+}
+
+/* temp stuff */
+
+#content .fa-long-arrow-alt-down {
+	color: #a3a3a3;	
+}

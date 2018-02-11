@@ -1,0 +1,78 @@
+/* ===========================
+--- General
+============================ */
+body{
+	background-color: #f3f3f3;
+}
+
+
+section:nth-child(odd){
+	background-color: #f3f3f3;
+}
+
+section:nth-child(even){
+	background-color: white;
+}
+
+/*
+section:nth-child(odd) h2, section:nth-child(odd) .fa-angle-down{
+	color: white;
+}
+*/
+
+section:nth-child(even){
+	background-color: white;
+}
+
+footer{
+	background-color: gray;
+}
+
+button{
+    background-color: #67b0d1; /* Green */
+    color: white;
+}
+
+/* ===========================
+--- Forms/Fields
+============================ */
+
+#content .fieldset-wrapper{
+	background: white
+}
+
+#content .fieldset-legend{
+	background: white;	
+}
+
+/* ===========================
+--- Navbar/Header
+============================ */
+nav{
+ background: gray   
+}
+
+.fa-home, .fa-bars, .fa-cog, .fa-plus, nav .icons .fa-search{
+    color: white;
+}
+
+.account a{
+    color: white;
+}
+
+.fa-circle{
+    color: rgba(0,0,0,0.2);
+}
+
+/* ===========================
+--- Footer
+============================ */
+
+footer p{
+	color:white;
+}
+
+/* ===========================
+--- Objview
+============================ */
+

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Car Pics</title>
+    <!--   Scripts-->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    
+    <!--    CSS-->
+    <link href="/css/reset.css" rel="stylesheet">
+    <link href="/css/colour.css" rel="stylesheet">
+    <link href="/css/global.css" rel="stylesheet">
+    <link href="/css/navbar.css" rel="stylesheet">
+    <link href="css/content.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+   <div id="container">
+		<nav>
+			<div class="flex-item logo">
+				<a href="/"><img src="/logos/MainLogoCircle.svg" alt="Main Logo"></a>
+			</div>
+			<div class="flex-item button_newpost">
+				<a href="/newpost">
+					<button type="button" action="/test">New Post <i class="fas fa-plus"></i></button>
+				</a>
+				<!-- TODO: remove temporary <a> wrapper on button for part 2 -->
+			</div>
+			<div class="flex-item input_search">
+				<i class="fa fa-search"></i>
+				<input type="search" placeholder="Search">
+			</div>
+			<div class="icons">
+				<div class="flex-item icon_plus">
+					<a href="">
+						<span class="fa-layers fa-fw">
+							<i class="fas fa-circle" data-fa-transform="grow-12"></i>
+							<i class="fas fa-plus"></i>
+						</span>
+					</a>
+				</div>
+				<div class="flex-item icon_search">
+					<a href="">
+						<span class="fa-layers fa-fw">
+							<i class="fas fa-circle" data-fa-transform="grow-12"></i>
+							<i class="fas fa-search"></i>
+						</span>
+					</a>
+				</div>
+				<div class="flex-item icon_home">
+					<a href="/">
+						<span class="fa-layers fa-fw">
+							<i class="fas fa-circle" data-fa-transform="grow-12"></i>
+							<i class="fas fa-home"></i>
+						</span>
+					</a>
+				</div>
+				<div class="flex-item icon_menu">
+					<a href="">
+						<span class="fa-layers fa-fw">
+							<i class="fas fa-circle" data-fa-transform="grow-12"></i>
+							<i class="fas fa-bars"></i>
+						</span>
+					</a>
+				</div>
+				<div class="flex-item icon_settings">
+					<a href="/settings">
+						<span class="fa-layers fa-fw">
+							<i class="fas fa-circle" data-fa-transform="grow-12"></i>
+							<i class="fas fa-cog"></i>
+						</span>
+					</a>
+				</div>
+			</div>
+			<div class="flex-item account">
+				<!--
+				<div class="icon_avatar">
+					<i class="fas fa-user-circle"></i>
+				</div>
+				<div class="name">
+					<h3>Nikolas</h3>
+				</div>
+				-->
+				<a href="">Sign In</a> | <a href="/register">Sign Up</a>
+			</div>
+		</nav>
+		<div id="content">
+			<section id="newpost">
+				<div class="section-heading">
+					<h2>Advanced Search</h2>
+					<i class="fa fa-2x fa-angle-down"></i>
+				</div>
+				<form action="">
+
+
+					<div class="fieldset-wrapper" id="search">
+						<div class="fieldset-legend">
+							<h5>Search</h5>
+						</div>
+						<fieldset>
+						<div class="input-wrapper">
+							<input type="search" placeholder="Search">
+						</div>
+						</fieldset>
+					</div>
+
+					<div class="fieldset-wrapper" id="filters">
+						<div class="fieldset-legend">
+							<h5>Filters</h5>
+						</div>
+							<fieldset>
+								<div class="container">
+									<div class="label-input-wrapper">
+										<label class="main-label">Location</label>
+										<input type="text" name="location" id="filter_location" placeholder="Auto: My Location">
+										<label>and within</label>
+										<div class="center">
+											<input type="number" name="distance" id="filter_distance" placeholder="0">
+											<select name="distance_unit" id="filter_distance_unit">
+												<option value="km">km</option>
+												<option value="m">mi</option>
+											</select>
+										</div>
+									</div>
+									<div class="label-input-wrapper">
+										<label class="main-label">Tags</label>
+										<input type="text" name="filter_tags" id="filter_tags" placeholder="tag1, tag2, ...">
+										<i class="far fa-plus-square"></i>
+
+									</div>
+									<div class="label-input-wrapper">
+										<label class="main-label">Rating</label>
+										<div class="left">
+											<input type="number" name="filter_rating_min" id="filter_rating_min" placeholder="0" min="0" max="5"> to <input type="number" name="filter_rating_max" id="filter_rating_max" placeholder="5" min="0" max="5">
+										</div>
+									</div>
+									<div class="label-input-wrapper">
+										<label class="main-label">Time</label>
+										<label class="left"><input type="checkbox" name="time" value="day"> Day</label>
+										<label class="left"><input type="checkbox" name="time" value="night"> Night</label>
+									</div>
+								</div>
+							</fieldset>
+					</div>
+					
+					<button type="submit"><i class="fas fa-search"></i>Search</button>
+					
+					<div class="fieldset-wrapper">
+						<div class="fieldset-legend">
+							<h5>Results</h5>
+						</div>
+						<fieldset>
+						<div class="input-wrapper">
+							<table itemscope itemtype="http://schema.org/Place" id="table">
+							<meta itemprop="worstRating" content = "0">
+							<meta itemprop="worstRating" content = "5">
+								<tr><th></th><th>Location</th><th class="unimportant">Rating</th><th class="unimportant">Time</th><th class="nodisp"></th></tr>
+								<tr><td><img itemprop="photo" src="/img/placeholders/resultsimg.jpg" alt="place-holder"></td><td>Hamilton</td><td class="unimportant" itemprop="ratingValue">4</td><td class="unimportant">Day</td><td class="nodisp" itemprop="location" itemscope>Latitude: 40.741895 N | Longitude: -73.989308 W</td></tr>
+								<tr><td><img src="/img/placeholders/resultsimg.jpg" alt="place-holder"></td><td>Hamilton</td><td class="unimportant">4</td><td class="unimportant">Day</td><td class="nodisp" itemprop="location" itemscope>Latitude: 40.741895 N | Longitude: -73.989308 W</td></tr>
+							</table>
+						</div>
+						</fieldset>
+					</div>
+					
+				</form>
+			</section>
+		</div>
+		
+		<footer>
+			<a href="#content" id="totop" class="btn-circle">
+				<i class="fa fa-angle-double-up animated" data-fa-transform="shrink-4"></i>
+			</a>
+			<p>©Car Pics. All rights reserved.</p>
+			<p>Design and implementation by: Nik Novak</p>
+		</footer>
+	</div>
+</body>
+
+</html>

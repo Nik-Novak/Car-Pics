@@ -1,0 +1,158 @@
+﻿#content h2{
+	text-align: center;	
+}
+
+/* ===========================
+--- Form
+============================ */
+
+#content form{
+	display: flex;
+	flex-direction: column;
+	width:80%
+}
+
+#content form fieldset{
+	border-top: 1px dashed darkgray;
+	margin:20px;
+	margin-top: 10px;
+}
+
+#content .fieldset-wrapper{
+		margin-bottom: 20px;	
+}
+
+#content button{
+	width:50%;
+	margin: 0 auto;
+}
+
+#content .center{
+	display: flex;
+	justify-content: center;
+	align-content:center;
+	align-items: center;
+}
+
+#content .center-column{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content:center;
+	align-items: center;
+}
+
+#content .left{
+	align-self: left;
+}
+
+#content .fa-search{
+	margin-right: 10px;
+}
+
+#content button{
+	margin-bottom: 30px;
+}
+
+/* ===========================
+--- Fieldset Legend
+============================ */
+#content .fieldset-wrapper h5{
+	margin-left: 20px;
+	margin-top: 20px;
+}
+/* ===========================
+--- Search
+============================ */
+
+#content #search .input-wrapper{
+	display: flex;
+	justify-content: center;
+}
+
+#content #search input{
+	margin-top: 20px;
+	width: 80%
+}
+
+/* ===========================
+--- Filters
+============================ */
+
+#filters fieldset > .container{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around
+}
+
+#filters input, #filters select, #filters label{
+	
+}
+
+#filters .label-input-wrapper{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 20px 10px;
+}
+
+#filters .main-label{
+	align-self: flex-start	
+}
+
+#filters input[type="text"]{
+	width: 100%;
+}
+
+/* individual input sizes */
+
+#filters #filter_distance{
+	text-align: center;
+	width: 30%
+}
+
+#filters #filter_tags{
+}
+
+@media(max-width: 1030px){
+	#filters fieldset > .container{
+		flex-direction: column;
+	}
+}
+
+@media(max-width: 768px){
+	#table .unimportant{
+		display: none;
+	}
+}
+
+/* ===========================
+--- Results
+============================ */
+#table {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#table td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+#table tr:nth-child(even){background-color: white;}
+#table tr:nth-child(odd){background-color: #f9f9f9;}
+
+#table tr:hover {background-color: #ddd;}
+
+#table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #67b0d1;
+    color: white;
+}
+
