@@ -155,9 +155,11 @@
 							<h5>Location Details</h5>
 						</div>
 						<fieldset>
-							<img id="map" src="/img/placeholders/googlemapsembed.png" alt="placeholder image for future google maps embed">
+<!--						    MAP-->
+                            <input id="pac-input" class="controls" type="text" placeholder="Search" submit="return false;">
+							<div class="map"></div>
 							<div class="center">
-							<p>Select the area on the map where you took the photo.</p>
+							<p>Click or tap to select the area on the map where you took the photo.</p>
 							</div>
 							<div class="center">
 								<div class="input-wrapper_time">
@@ -185,7 +187,7 @@
 						</fieldset>
 					</div>
 					
-					<button type="submit">Submit Post</button>
+					<button type="button" onclick="test();">Submit Post</button>
 					
 				</form>
 			</section>
@@ -201,6 +203,10 @@
 	</div>
 	<!--	JQuery from CDN-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<!--	Maps -->
+	<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjEq7iq3MF3DYNTHU9kuc0Q7bRFMvPFHk&libraries=places&callback=initMap">
+    </script>
 	
 	<script type="text/javascript" src="js/document.js"></script>
 </body>
