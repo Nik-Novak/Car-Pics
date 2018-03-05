@@ -115,27 +115,20 @@
 						</div>
 							<fieldset>
 								<div class="container">
-									<div class="label-input-wrapper">
+									<div class="label-input-wrapper checkboxes">
 										<label class="main-label">Location</label>
-										<input type="text" name="location" id="filter_location" placeholder="Auto: My Location">
-										<label>and within</label>
-										<div class="center">
-											<input type="number" name="distance" id="filter_distance" placeholder="0">
-											<select name="distance_unit" id="filter_distance_unit">
-												<option value="km">km</option>
-												<option value="m">mi</option>
-											</select>
-										</div>
+										<label><input type="checkbox" id="filter_location" placeholder="Auto: My Location"> Only results within map bounds</label>
+										<label><input type="checkbox" id="filter_location" placeholder="Auto: My Location"> Only results near me</label>
 									</div>
 									<div class="label-input-wrapper">
 										<label class="main-label">Tags</label>
 										<input type="text" name="filter_tags" id="filter_tags" placeholder="tag1, tag2, ...">
-										<i class="far fa-plus-square"></i>
+<!--										<i class="far fa-plus-square"></i>-->
 
 									</div>
 									<div class="label-input-wrapper">
 										<label class="main-label">Rating</label>
-										<div class="left">
+										<div class="left margin-top-10">
 											<input type="number" name="filter_rating_min" id="filter_rating_min" placeholder="0" min="0" max="5"> to <input type="number" name="filter_rating_max" id="filter_rating_max" placeholder="5" min="0" max="5">
 										</div>
 									</div>
@@ -150,11 +143,13 @@
 					
 					<button type="submit"><i class="fas fa-search"></i>Search</button>
 					
-					<div class="fieldset-wrapper">
+					<div class="fieldset-wrapper" id="results">
 						<div class="fieldset-legend">
 							<h5>Results</h5>
 						</div>
 						<fieldset>
+						<input id="pac-input" class="controls" type="text" placeholder="Search">
+						<div class="map"></div>
 						<div class="input-wrapper">
 							<table itemscope itemtype="http://schema.org/Place" id="table">
 							<meta itemprop="worstRating" content = "0">
@@ -181,6 +176,10 @@
 	</div>
 	<!--	JQuery from CDN-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<!--	Maps -->
+	<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjEq7iq3MF3DYNTHU9kuc0Q7bRFMvPFHk&libraries=places&callback=initMap">
+    </script>
 	
 	<script type="text/javascript" src="js/document.js"></script>
 </body>

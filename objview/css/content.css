@@ -65,11 +65,24 @@
         height: 60vh;
 	}
 
+#content #pac-input{
+    margin-top: 8px;
+    width: 70%
+}
+
 @media(max-width: 1030px){
 	#content #location .map{
 		width: 100%;
         height: 80vh;
 	}
+}
+
+@media(max-width: 650px){
+	#content #pac-input{
+        margin-top: 50px;
+        width: 90%;
+        margin-left: -105px;
+    }
 }
 
 /* ===========================

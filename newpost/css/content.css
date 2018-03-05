@@ -139,6 +139,8 @@
 }
 
 #content #pac-input{
+    display: flex;
+    flex: 1 0 auto;
     margin-top: 8px;
     width: 70%
 }
